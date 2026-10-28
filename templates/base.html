@@ -1,0 +1,366 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <style>
+    .bg-mycolor1
+    {
+       background: #FB8C00;
+    }
+    .bg-mycolor2
+    {
+    background:#FB8C00;
+    }
+    .text-mycolor1
+    {
+        color: #FB8C00;
+    }
+    .text-mycolor2
+    {
+        color: #FF1744;
+    }
+    .slider
+    {
+   min-height: 450px;
+    }
+    .s
+    {
+     min-height: 200px;
+    }
+    .foodcat:hover{
+      transform: scale(1.1);
+      transition: 2s;
+
+    }
+    .foodcat{
+      transition: 2s;
+    }
+    .catimg{
+      height: 130px;
+    }
+    .contactus
+    {
+    min-height: 400px;
+
+    }
+    .ufooter
+    {
+    min-height: 300px;
+    }
+    .bfooter
+    {
+      min-height: 50px;
+    }
+    .servicecard:hover{
+      transform:scale(1.1);
+      transition:2s;
+    }
+    .servicecard
+    {
+      transition:2s;
+    }
+    .gallery{
+      min-height: 400px;
+    }
+    .team{
+      min-height: 200px;
+    }
+    .imgteam{
+      height: 300px;
+    }
+    .menutext{
+      font-size: 20px;
+    }
+    .category{
+      min-height: 200px;
+    }
+    .caticon{
+      border: 1px solid gray;
+      border-radius: 50px;
+      transition: 2s;
+    }
+    .caticon:hover{
+     background: orange;
+     color: white;
+     transition: 2s;
+    }
+    .WhyUs
+    {
+      min-height: 300px;
+    }
+    #menu
+    {
+    background: transparent !important;
+    }
+    #menu ul li  a:hover{
+color: white !important;
+transition: 2s;
+    }
+    .ttop{
+      border-top: 3px solid #FF1744;
+    }
+    .whyic
+    {
+      height: 70px;
+      width: 70px;
+      font-size: 35px;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .iccontact
+    {
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      padding: 11px;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+    .t
+    {
+    height: 50px;
+    }
+    .ta
+    {
+    height: 112px;
+    }
+    .menuimg{
+      height: 110px;
+    }
+    .menucatimg{
+      height: 120px;
+    }
+    .restaurant{
+      height: 360px;
+    }
+    .rmiddle{
+      height: 180px;
+     
+    }
+    zimg{
+      transition: 2s;
+    }
+    .zimg:hover{
+      transform: scale(1.1);
+      transition: 2s;
+
+    }
+    .imgservice
+    {
+      height:60px;
+    }
+
+  </style>
+</head>
+
+  <body>
+    <div class="container-fluid">
+     <div class="row ttop">
+      <div class="col-sm-10  mx-auto PY-2">
+            <div class="row">
+              <div class="col-sm-6">
+            <div class="fs-3">THE FOOD<b class="text-mycolor1"> VILLA <i class="fa-solid fa-utensils"></i></b></div>
+              </div>
+              <div class="col-sm-2">
+                <b
+             <i class="fa-solid fa-phone"></i>Call Us</b><br>
+                9918470187
+              </div>
+              <div class="col-sm-2">
+                <b><i class="fa-solid fa-envelope"></i>Mail Us </b><br>
+                ankitabhay2011@gmail.com
+              </div>
+              <div class="col-sm-2 text-int">
+              <a href="/booking/" class="btn bg-mycolor1 rounded-pill mt-1">RESERVE TABLE</a>
+
+</div>
+            </div>
+
+      </div>
+     
+     
+       </div>
+
+
+<!--START MENU-->
+<DIV class="'row bg-mycolor2" style="min-height: 45px;">
+  <div class="col-sm-10 mx-auto">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home/"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/foodmenu/"><i class="fa-solid fa-info"></i>Our Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about"><i class="fa-solid fa-info"></i>About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services/"><i class="fa-solid fa-info"></i>Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/wchoose/"><i class="fa-solid fa-circle-check"></i>Why choose us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/team/"><i class="fa-brands fa-teamspeak"></i>Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery/"><i class="fa-solid fa-image"></i>Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/"><i class="fa-solid fa-address-card"></i>Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-brands fa-hire-a-helper"></i>Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/booking/">
+            <i class="fa-solid fa-utensils"></i>Tabel Booking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/"><i class="fa-solid fa-user-plus"></i>Login</a>
+        
+        </li>
+        
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  </div>
+</DIV>
+<!--END MENU-->
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+<!--start category -->
+<DIV class="row category py-4">
+    <p class="fs-3 text-center">Our<b class="text-mycolor1">Category</b></p>
+    <hr class="w-25 mx-auto"/>
+  <div class=" col-sm-10 mx-auto">
+    <div class="row mx-auto">
+      <!--start category widget -->
+      <div class="col-sm-3 text-center">
+        <i class="fa-solid fa-user caticon p-3 fs-1 mb-3"></i>
+        <h3>1000+</h3>
+        <p>Customers Served</p>
+
+          
+          
+        
+      </div>
+      <!--end category widget -->
+      <!--start category widget -->
+      <div class="col-sm-3 text-center">
+        <i class="fa-solid fa-user caticon p-3 fs-1 mb-3"></i>
+        <h3>100+</h3>
+        <p>Dishes Served</p>
+
+          
+          
+        
+      </div>
+      <!--end category widget -->
+      <!--start category widget -->
+      <div class="col-sm-3 text-center">
+        <i class="fa-solid fa-user caticon p-3 fs-1 mb-3"></i>
+        <h3>1000+</h3>
+        <p>Happy Vistors</p>
+
+          
+          
+        
+      </div>
+      <!--end category widget -->
+      <!--start category widget -->
+      <div class="col-sm-3 text-center">
+        <i class="fa-solid fa-user caticon p-3 fs-1 mb-3"></i>
+        <h3>500+</h3>
+        <p>Events Catered</p>
+
+          
+          
+        
+      </div>
+      <!--end category widget -->
+
+
+    </div>
+  </div>
+  </DIV>
+<!--end category -->
+   
+
+<!--start ufooter -->
+<div class="row ufooter bg-dark">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-3 text-light p-3">
+    <h3>Contact Address</h3>
+    <p class="fs-5 pt-4">Sec 5 Vikas Nagar <br>
+    Tedhi Puliya Ring Road  <br>
+    Lucknow UP 226022</p>
+    <p><i class="fa-solid fa-phone"></i>91-9918470187</p>
+    <p><i class="fa-solid fa-phone"></i>91-9918470187</p>
+    <p class="fs-5 p-1"><i class="fa-brands fa-facebook "></i>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-instagram"></i>
+    </p>
+  </div>
+  <div class="col-sm-3 text-light menutext "style="padding-top:20px">
+    <p ><i class="fa-solid fa-arrow-right"></i> Home</p>
+    <p ><i class="fa-solid fa-arrow-right"></i> About Us</p>
+    <p><i class="fa-solid fa-arrow-right"></i> Services</p>
+    <p><i class="fa-solid fa-arrow-right"></i> Gallery</p>
+    <p ><i class="fa-solid fa-arrow-right"></i> Category</p>
+  </div>
+  <div class="col-sm-3 text-light menutext"style="padding-top:20px">
+    <p ><i class="fa-solid fa-arrow-right"></i> Home</p>
+    <p ><i class="fa-solid fa-arrow-right"></i> About Us</p>
+    <p><i class="fa-solid fa-arrow-right"></i> Services</p>
+    <p><i class="fa-solid fa-arrow-right"></i> Gallery</p>
+    <p><i class="fa-solid fa-arrow-right"></i> Category</p>
+  </div>
+  <div class="col-sm-3 col-sm-3 text-light"style="padding-top:20px">
+    <h3>About Us</h3>
+    <p>Discover our menu, story, and special offers all in one place. Easy online reservations and ordering at your fingertips.</p>
+  </div>
+    </div>
+  </div>
+  
+  </div>
+<!--end ufooter -->
+
+<!--start bfooter -->
+<div class="row bfooter bg-dark text-light text-center pt-3">
+<span>Developed By Mahaveer kumar dubey &copy; <a href="https://www.techpile.in/"target="_blank">Techpile Technology</a></span></div>
+<!--end bfooter -->
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
