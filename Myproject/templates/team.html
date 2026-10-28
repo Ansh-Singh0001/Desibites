@@ -1,0 +1,71 @@
+{% extends 'base.html'%}
+
+{% load static %}
+ 
+{% block content %}
+
+
+
+<!--start team -->
+<div class="ROW team py-4">
+    <p class="fs-3 text-center">Our<b class="text-mycolor1">Team</b></p>
+    <hr class="w-25 mx-auto"/></div>
+    <div class="col-sm-10 mx-auto">
+      <div class="row">
+        <!--start team card-->
+        <div class="col-sm-4 pt-2">
+          <div class="card mx-auto shadow-lg p-2" style="width: 18rem;">
+  <img src="{% static 'images/nn.jpg' %}" class="card-img-top imgteam img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Ansh Singh</h5>
+    <p class="card-text text-center">Owner</p>
+  <center>  <p class="fs-5 p-1">
+    <a href="https://www.instagram.com/ansh_singh_514/">
+    <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i></a>
+    </p></center>
+  </div>
+</div>
+        </div>
+        <!--end team   card -->
+        
+        <!--start team card-->
+        <div class="col-sm-4 pt-2">
+          <div class="card mx-auto shadow-lg p-2" style="width: 18rem;">
+  <img src="{% static 'images/mk.jpeg' %}" class="card-img-top imgteam img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Yash Vardhan Singh</h5>
+    <p class="card-text text-center">Masterchef</p>
+  <center>  <p class="fs-5 p-1"><a href="https://www.instagram.com/yashvardhansingh2908/"><i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i></a>
+    </p></center>
+  </div>
+</div>
+        </div>
+        <!--end team card --><!--start team card-->
+        <div class="col-sm-4 pt-2">
+          <div class="card mx-auto shadow-lg p-2" style="width: 18rem;">
+  <img src="{% static 'images/hn.jpeg' %}" class="card-img-top imgteam img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Mahaveer Dubey</h5>
+    <p class="card-text text-center">Chef</p>
+  <center> 
+    <a href="https://www.instagram.com/mahaveer_dubey_bagi">
+    <p class="fs-5 p-1"><i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i></a>
+    </p></center>
+  </div>
+</div>
+        </div>
+        <!--end team card -->
+      </div>
+    </div>
+<!--end team -->
+
+{% endblock %}

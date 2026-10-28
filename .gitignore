@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+Myproject/db.sqlite3
+.env
+.env.*
+!.env.example

@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+ {% block content %}
+
+ <div class="row py-2">
+    <p class="fs-3 text-center">Book a <b class="text-mycolor1">Table</b></p>
+        <hr class="w-25 mx auto" />
+        <div class="col-sm-10 mx-auto">
+            <div class="row py-3">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-10 mx-auto shadow-lg p-3">
+                            <form method="post">
+                              {% csrf_token %}
+                        <div class="input-group flex-nowrap shadow-lg my-1">
+  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+  <input name="name" type="text" class="form-control" placeholder="Enter Your Name..." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+ <div class="input-group flex-nowrap shadow-lg my-3">
+  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-phone"></i></span>
+  <input name="mob" type="number" class="form-control" placeholder="Mobile Number..." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="input-group flex-nowrap shadow-lg my-1">
+  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+  <input name="email" type="text" class="form-control" placeholder="Enter Your email id..." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="input-group flex-nowrap shadow-lg my-3">
+  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-users"></i></span>
+  <input name="totalperson" type="number" class="form-control" placeholder="Number of Person..." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="input-group flex-nowrap shadow-lg mb-3">
+  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-calendar"></i></span>
+  <input name="date" type="date" class="form-control" placeholder="Select a Date.." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="input-group flex-nowrap shadow-lg mb-3">
+  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-clock"></i></span>
+  <input name="time" type="time" class="form-control" placeholder="Select a Time.." aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="imput-group flex-nowrap shadow-lg mb-3">
+    <select class="form-control" name="foodtypemain">
+        <option>Select Main Food Type</option>
+        <option>Veg</option>
+        <option>Non-Veg</option>
+    </select>
+</div>
+<div class="input-group flex-nowrap">
+    <select class="form-control" name="foodtype">
+       <option>Select Food Type</option>
+      {% for x in cat %}
+       
+        {% endfor %}
+        <option>Starter</option>
+        <option>Main Course</option>
+    </select>
+</div><br>
+<div class="input-group flex-nowrap"> 
+  <select class="form-control" name="pmode">
+  <option >cash</option>
+  <option >Online</option>
+  <option >Cheque</option>
+</select>
+</div>
+<div class="input-group flex-nowrap mt-3">
+    <input type="submit" value="Book a Table Now" class="form-control btn-outline-danger"/>
+</div>
+                    </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                      {% for x in cat %}
+                      <!--card-->
+                      <div class="col-sm-4">
+                        <div class="card p-2 shadow-lg">
+                          <img src="../{{x.picture}}"style="max-height" class="card-img-top">
+                          <p class="text-center fw-bold py-1">
+                            <a href="/foodmenu?id={{x.id}}"style="text-decoration:none"class="text-dark"> {{x.category }} </a>
+                          </p>
+                        </div>
+                      </div>
+                      <!--end card-->
+                      {% endfor %}
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ </div>
+ {% endblock %}
